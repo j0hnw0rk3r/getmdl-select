@@ -34,7 +34,7 @@
                 previousDataVal = hiddenInput.value;
                 if ("createEvent" in document) {
                     var evt = document.createEvent("HTMLEvents");
-                    evt.initEvent("change", false, true);
+                    evt.initEvent("change", true, true);
                     menu['MaterialMenu'].hide();
                     input.dispatchEvent(evt);
                 } else {
